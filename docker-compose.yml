@@ -1,0 +1,22 @@
+services:
+  asr-training:
+    build: .
+    container_name: breeze-asr-training
+    volumes:
+      # 將您本機存放音訊檔的目錄掛載到容器內的 /standard
+      # 範例：如果您本機的音訊檔在 ./data/standard，請寫成 ./data/standard:/standard
+      - .:/app
+
+      # (推薦) 掛載 Hugging Face 快取，避免重複下載模型
+      - ~/.cache/huggingface:/root/.cache/huggingface
+
+    tty: true
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: tail -f /dev/null

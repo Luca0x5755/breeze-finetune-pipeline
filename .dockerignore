@@ -1,0 +1,22 @@
+# .dockerignore
+
+# 忽略所有音訊語料
+standard/
+
+# 忽略模型輸出成果
+breeze-asr-25-local-hokkian_v1/
+
+# 忽略 Python 相關的快取與虛擬環境
+__pycache__/
+*.pyc
+*.pyo
+.venv
+venv/
+
+# 忽略 Git 相關檔案
+.git
+.gitignore
+
+# 忽略 Docker 相關檔案 (避免遞迴複製)
+Dockerfile
+docker-compose.yml

@@ -1,0 +1,46 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.csv
+# IDE-specific files (e.g., for VS Code)
+.vscode/
+
+# Output directories for models and data
+# 我們不希望將大型模型檔或資料集本身上傳到 Git
+
+whisper-small-zh-finetune-final/
+whisper-small-zh-finetune-performance/
+whisper-small-zh-finetune-stable/
+whisper-small-zh-finetune-prototype/
+Taiwanese-speech-recognition/
+whisper-small-zh-finetune-zh_full/
+whisper-small-zh-finetune-zh/
+standard/
+standard_json/
+downloaded_files/
+sound_file.ipynb
+standard.txt
+standard.zip
+standard_json.zip
+audio_files/
+*.wav
+*.mp3
+test_wav/
+*.zip
+*.xlsx
+output/
+evaluation_results/
+
+debug_audio_wav/
+debug_audio/
+
+trans_tailo_to_zh_optimized.py
+
+selenium_audio.py
+sutiau-wav-20250728T095826Z-1-001/
+leku-wav-20250728T095826Z-1-001/
+youtube_clips_isolated/
+breeze-asr-25-local-hokkian_v1
